@@ -1,0 +1,17 @@
+# Environment
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Local database data
+postgres-data/
