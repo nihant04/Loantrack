@@ -1,0 +1,13 @@
+apiVersion: v1
+data:
+  001_create_loans.sql: "CREATE TABLE IF NOT EXISTS loans (\r\n    id SERIAL PRIMARY
+    KEY,\r\n    borrower_name VARCHAR(100) NOT NULL,\r\n    amount NUMERIC(12, 2)
+    NOT NULL CHECK (amount > 0),\r\n    status VARCHAR(20) NOT NULL CHECK (status
+    IN ('Pending', 'Approved', 'Rejected')),\r\n    created_at TIMESTAMP NOT NULL
+    DEFAULT CURRENT_TIMESTAMP\r\n);\r\n\r\nINSERT INTO loans (borrower_name, amount,
+    status) VALUES\r\n    ('Amit Sharma', 50000.00, 'Pending'),\r\n    ('Priya Patel',
+    75000.00, 'Approved'),\r\n    ('Rahul Verma', 30000.00, 'Rejected'),\r\n    ('Sneha
+    Joshi', 100000.00, 'Approved'),\r\n    ('Vikram Singh', 45000.00, 'Pending');"
+kind: ConfigMap
+metadata:
+  name: postgres-migration
