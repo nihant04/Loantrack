@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+section {
+    margin-top: 30px;
+}
+
+input,
+select,
+button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    cursor: pointer;
+}
