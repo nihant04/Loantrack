@@ -16,8 +16,7 @@ async function loadLoans() {
             (loan) => `
                 <div>
                     <strong>${loan.borrower_name}</strong>
-                    - ₹${loan.loan_amount}
-                    - ${loan.property_city}
+                    - ₹${loan.amount}
                     - ${loan.status}
                 </div>
             `
@@ -32,10 +31,9 @@ document
 
         const loan = {
             borrower_name: document.getElementById("borrower_name").value,
-            loan_amount: Number(
+            amount: Number(
                 document.getElementById("loan_amount").value
             ),
-            property_city: document.getElementById("property_city").value,
             status: document.getElementById("status").value
         };
 
