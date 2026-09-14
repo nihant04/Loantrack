@@ -730,6 +730,10 @@ Recommended screenshots:
 
 ![Kubernetes Rollout](evidence/K8s%20Rollout.png)
 
+### Backend Scaling and Load Balancing
+
+![Kubernetes Backend Scaling](evidence/K8s%20backend%20scaling.png)
+
 
 The screenshots are supplementary evidence; the commands and outputs above document the technical verification.
 
