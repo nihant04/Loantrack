@@ -88,7 +88,10 @@ def shutdown():
 
 @app.get("/healthz")
 def healthz():
-    return {"status": "ok"}
+    return {
+        "status": "ok",
+        "pod": os.getenv("HOSTNAME", "unknown"),
+    }
 
 
 @app.get("/readyz")
