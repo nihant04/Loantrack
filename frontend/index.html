@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoanTrack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main>
+        <h1>LoanTrack</h1>
+        <p>Loan Management System</p>
+
+        <section>
+            <h2>Loans</h2>
+
+            <div id="loans">
+                Loading loans...
+            </div>
+        </section>
+
+        <section>
+            <h2>Add Loan</h2>
+
+            <form id="loan-form">
+                <input
+                    type="text"
+                    id="borrower_name"
+                    placeholder="Borrower name"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="loan_amount"
+                    placeholder="Loan amount"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="property_city"
+                    placeholder="Property city"
+                    required
+                >
+
+                <select id="status">
+                    <option value="Pending">Pending</option>
+                    <option value="Approved">Approved</option>
+                    <option value="Rejected">Rejected</option>
+                </select>
+
+                <button type="submit">Add Loan</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
